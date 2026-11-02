@@ -16,28 +16,30 @@
     --gunmetal: #404040;
     --black: #000000;
 
-    /* Fonts */
-    .comic-neue-regular {
-        font-family: "Comic Neue", cursive;
-        font-weight: 400;
-        font-style: normal;
-    }
+}
 
-    .comic-neue-bold {
-        font-family: "Comic Neue", cursive;
-        font-weight: 700;
-        font-style: normal;
-    }
+/* Fonts */
 
-    .comic-neue-regular-italic {
-        font-family: "Comic Neue", cursive;
-        font-weight: 400;
-        font-style: italic;
-    }
+.font-reg {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
-    .comic-neue-bold-italic {
-        font-family: "Comic Neue", cursive;
-        font-weight: 700;
-        font-style: italic;
-    }
+.font-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-ireg {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.font-ibold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: italic;
 }
