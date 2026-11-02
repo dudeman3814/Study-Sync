@@ -28,10 +28,10 @@ main {
 
 header {
     text-align: center;
-    background-color: var(--footheaderbg);
+    background-color: var(--footheader);
 }
 
 footer {
     text-align: center;
-    background-color: var(--bright-teal-blue);
+    background-color: var(--footheader);
 }
