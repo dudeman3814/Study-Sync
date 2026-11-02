@@ -1,0 +1,43 @@
+:root {
+    /* Color palettes to be generated/named using www.coolors.co */
+
+    /* Colors Brand */
+    --french-blue: #023e8aff;
+    --bright-teal-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --turquoise-surf: #00b4d8ff;
+    --sky-aqua: #48cae4ff;
+    --frosted-blue: #90e0efff;
+
+    /* Colors Grayscale */
+    --white: #FFFFFF;
+    --silver: #BFBFBF;
+    --gray: #808080;
+    --gunmetal: #404040;
+    --black: #000000;
+
+    /* Fonts */
+    .comic-neue-regular {
+        font-family: "Comic Neue", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .comic-neue-bold {
+        font-family: "Comic Neue", cursive;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .comic-neue-regular-italic {
+        font-family: "Comic Neue", cursive;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .comic-neue-bold-italic {
+        font-family: "Comic Neue", cursive;
+        font-weight: 700;
+        font-style: italic;
+    }
+}
