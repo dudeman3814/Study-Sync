@@ -1,7 +1,8 @@
 :root {
 
     /* Quick Dev Reference */
-    --footheader: var(--bright-teal-blue);
+    --footheader: var(--french-blue);
+    --footheader-text: var(--turquoise-surf);
 
     /* =================== */
 }
@@ -29,9 +30,11 @@ main {
 header {
     text-align: center;
     background-color: var(--footheader);
+    color: var(--footheader-text);
 }
 
 footer {
     text-align: center;
     background-color: var(--footheader);
+    color: var(--footheader-text);
 }
