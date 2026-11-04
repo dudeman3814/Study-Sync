@@ -20,9 +20,16 @@
         <h1 class="font-bold">StudySync</h1>
         <h2 class="font-ibold">a bespoke TODO list app</h2>
     </header>
-    <main class="font-reg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam consequuntur aperiam delectus ratione neque unde ipsa, quia obcaecati culpa perferendis quae debitis officiis laborum asperiores eius vitae at incidunt.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus quibusdam, veritatis neque dolorum illo incidunt sunt quasi, nam deleniti ut eaque laboriosam, quod voluptatibus? Excepturi molestias velit deserunt nobis?</p>
+    <main>
+        <form action="">
+            <div id="loginPrompt">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" pattern="\d+" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <input type="submit" name="submit" id="submit" value="Login">
+            </div>
+        </form>
     </main>
     <footer>
         <p class="font-reg">StudySync &copy;2026</p>
