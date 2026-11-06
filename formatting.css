@@ -25,6 +25,9 @@ main {
     margin-top: 2vh;
     margin-bottom: 2vh;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -37,4 +40,9 @@ footer {
     text-align: center;
     background-color: var(--footheader);
     color: var(--footheader-text);
+}
+
+.login-box {
+    justify-content: center;
+    display: grid;
 }
