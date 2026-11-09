@@ -44,15 +44,20 @@ footer {
 
 .login-box {
     justify-content: center;
+    align-content: center;
+    row-gap: 2vh;
     display: grid;
     border: solid;
     border-color: var(--french-blue);
-    min-width: 200px;
-    min-height: 400px;
+    min-height: 30vh;
+    width: 50vw;
+    max-width: fit-content;
+    padding: 2vh 4vw;
+    box-sizing: border-box;
 }
 
 .login-box #submit{
     justify-self: center;
-    min-width: stretch;
-    max-height: 50%
+    width: 100%;
+    cursor: pointer;
 }
