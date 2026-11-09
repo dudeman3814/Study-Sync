@@ -45,4 +45,6 @@ footer {
 .login-box {
     justify-content: center;
     display: grid;
+    border: solid;
+    border-color: var(--french-blue);
 }
