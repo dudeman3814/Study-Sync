@@ -3,6 +3,8 @@
     /* Quick Dev Reference */
     --footheader: var(--french-blue);
     --footheader-text: var(--turquoise-surf);
+    --bg-common: var(--french-blue);
+    --text-common: var(--turquoise-surf);
 
     /* =================== */
 }
@@ -60,4 +62,7 @@ footer {
     justify-self: center;
     width: 100%;
     cursor: pointer;
+    border: solid;
+    background-color: var(--bg-common);
+    color: var(--text-common);
 }
