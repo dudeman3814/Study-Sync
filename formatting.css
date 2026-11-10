@@ -5,6 +5,7 @@
     --footheader-text: var(--turquoise-surf);
     --bg-common: var(--french-blue);
     --text-common: var(--turquoise-surf);
+    --border-common: var(--blue-green);
 
     /* =================== */
 }
@@ -49,20 +50,30 @@ footer {
     align-content: center;
     row-gap: 2vh;
     display: grid;
-    border: solid;
-    border-color: var(--french-blue);
+    border: solid var(--border-common);
     min-height: 30vh;
-    width: 50vw;
+    width: 70vw;
     max-width: fit-content;
     padding: 2vh 4vw;
     box-sizing: border-box;
+    font-size: large;
 }
 
 .login-box #submit{
     justify-self: center;
     width: 100%;
     cursor: pointer;
-    border: solid;
-    background-color: var(--bg-common);
+    border: solid var(--border-common);
+    color: var(--text-common);
+    background-color: var(--white);
+}
+
+.login-box input {
+    border: solid var(--border-common);
+    color: var(--text-common);
+    font-size: large;
+}
+
+.login-box label {
     color: var(--text-common);
 }
