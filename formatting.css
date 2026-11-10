@@ -59,7 +59,7 @@ footer {
     font-size: large;
 }
 
-.login-box #submit{
+.login-box #submit {
     justify-self: center;
     width: 100%;
     cursor: pointer;
