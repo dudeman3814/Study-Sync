@@ -80,7 +80,7 @@ footer {
 }
 
 .login-error {
-    color: var(--error-red);
+    color: var(--text-error);
     text-align: center;
     justify-self: center;
 }
