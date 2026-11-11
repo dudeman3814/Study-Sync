@@ -5,6 +5,7 @@
     --footheader-text: var(--turquoise-surf);
     --bg-common: var(--french-blue);
     --text-common: var(--turquoise-surf);
+    --text-error: var(--error-red);
     --border-common: var(--blue-green);
 
     /* =================== */
@@ -76,4 +77,10 @@ footer {
 
 .login-box label {
     color: var(--text-common);
+}
+
+.login-error {
+    color: var(--error-red);
+    text-align: center;
+    justify-self: center;
 }
