@@ -16,6 +16,12 @@
     --gunmetal: #404040;
     --black: #000000;
 
+    /* Colors Utility */
+    --error-red: #a30000;
+    --success-green: #00a300;
+    --warning-amber: #ffa300;
+    --utility-blue: #0000a3;
+
 }
 
 /* Fonts */
