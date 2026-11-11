@@ -7,7 +7,6 @@ const mockUsers = {
 
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById('loginForm');
-    // 1. Grab the login box container
     const loginPrompt = document.getElementById('loginPrompt');
 
     loginForm.addEventListener('submit', function (event) {
@@ -16,25 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const usernameInput = document.getElementById('username').value.trim();
         const passwordInput = document.getElementById('password').value;
 
-        if (mockUsers.hasOwnProperty(usernameInput)) {
-            const user = mockUsers[usernameInput];
+        // Check both username existence and password match in one condition
+        if (mockUsers.hasOwnProperty(usernameInput) && mockUsers[usernameInput].password === passwordInput) {
+            window.location.href = mockUsers[usernameInput].redirect;
+        } else {
+            console.log("Incorrect credentials, check carefully");
 
-            if (user.password === passwordInput) {
-                window.location.href = user.redirect;
-            } else {
-                console.log("Incorrect Password :(");
+            if (!document.getElementById("loginError")) {
+                const errorContainer = document.createElement("div");
+                errorContainer.id = "loginError";
+                errorContainer.classList.add("login-error", "font-bold");
+                errorContainer.textContent = "Incorrect ID or Password. Try again :(";
 
-                // 2. Only create the div if it isn't already showing
-                if (!document.getElementById("passwordError")) {
-                    const errorContainer = document.createElement("div");
-                    errorContainer.id = "passwordError";
-                    errorContainer.classList.add("login-error", "font-bold");
-
-                    const errorMessage = document.createTextNode("Incorrect Password :(");
-                    errorContainer.appendChild(errorMessage);
-                    loginPrompt.appendChild(errorContainer);
-                }
-
+                loginPrompt.appendChild(errorContainer);
             }
         }
     });

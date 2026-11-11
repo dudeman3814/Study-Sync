@@ -83,4 +83,7 @@ footer {
     color: var(--text-error);
     text-align: center;
     justify-self: center;
+    width: 0;
+    min-width: 100%;
+    overflow-wrap: break-word;
 }
