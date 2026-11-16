@@ -2,7 +2,7 @@
 
 // Hardcoded mock user database for the demo
 const mockUsers = {
-    "123": { password: "password", redirect: "pages/home.html" }
+    "30271234": { password: "password", redirect: "pages/home.html" }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
