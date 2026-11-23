@@ -87,3 +87,55 @@ footer {
     min-width: 100%;
     overflow-wrap: break-word;
 }
+
+main:has(.columns-list) {
+    align-items: stretch;
+}
+
+.columns-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Individual column styling */
+.columns-list>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers the heading horizontally */
+    padding: 1rem;
+}
+
+/* Vertical divider lines between columns */
+.columns-list>div:not(:last-child) {
+    border-right: solid var(--border-common)
+}
+
+/* Shared Pill Styling */
+.columns-list h1 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 2px solid var(--black);
+    border-radius: 12px;
+    padding: 0.55rem 1.4rem;
+    margin-top: 0;
+}
+
+/* Column-Specific Colors */
+#not-started h1 {
+    background-color: var(--error-red);
+    color: var(--white);
+}
+
+#in-progress h1 {
+    background-color: var(--warning-amber);
+    color: var(--black);
+}
+
+#completed h1 {
+    background-color: var(--success-green);
+    color: var(--white);
+}
