@@ -5,13 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const currentUser = urlParams.get("user") || "30271234";
 
-    // Map status numbers (0, 1, 2) to your HTML column IDs and CSS classes
-    const statusMap = {
-        0: { columnId: "not-started", dotClass: "status-red" },
-        1: { columnId: "in-progress", dotClass: "status-amber" },
-        2: { columnId: "completed", dotClass: "status-green" }
-    };
-
     // Fetch the mock JSON file (adjust the path if your JSON files are in a different folder)
     fetch(`../assets/data/user-${currentUser}.json`)
         .then(response => {
@@ -30,10 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function renderTasks(tasks, statusMap) {
     tasks.forEach(task => {
-        const statusInfo = statusMap[task.status];
-        if (!statusInfo) return;
+        const columnId = statusMap[task.status];
+        if (!columnId) return;
 
-        const targetColumn = document.getElementById(statusInfo.columnId);
+        const targetColumn = document.getElementById(columnId);
         if (!targetColumn) return;
 
         const taskCard = document.createElement("div");
