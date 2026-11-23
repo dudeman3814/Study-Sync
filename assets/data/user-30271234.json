@@ -1,0 +1,23 @@
+[
+  {
+    "taskNumber": 1,
+    "taskDetails": "some task, of a different user",
+    "status": 2,
+    "taskDateStart": "2026-11-18",
+    "taskDateDline": "2026-11-20"
+  },
+  {
+    "taskNumber": 2,
+    "taskDetails": "another task, of a different user",
+    "status": 1,
+    "taskDateStart": "2026-11-21",
+    "taskDateDline": "2026-11-25"
+  },
+  {
+    "taskNumber": 3,
+    "taskDetails": "yet another task, of a different user",
+    "status": 0,
+    "taskDateStart": "2026-11-23",
+    "taskDateDline": "2026-11-28"
+  }
+]
