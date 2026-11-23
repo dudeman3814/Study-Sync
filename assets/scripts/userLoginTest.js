@@ -2,7 +2,8 @@
 
 // Hardcoded mock user database for the demo
 const mockUsers = {
-    "30271234": { password: "password", redirect: "pages/home.html" }
+    "30271234": { password: "password" },
+    "30275678": { password: "different" }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Check both username existence and password match in one condition
         if (mockUsers.hasOwnProperty(usernameInput) && mockUsers[usernameInput].password === passwordInput) {
-            window.location.href = mockUsers[usernameInput].redirect;
+            window.location.href = "pages/home.html";
         } else {
             console.log("Incorrect credentials, check carefully");
 
