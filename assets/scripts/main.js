@@ -1,11 +1,15 @@
 // GOOGLE GEMINI GENERATED CODE FOR DEMONSTRATION PURPOSES ONLY!!!
 
+const statusMap = {
+    0: "not-started",
+    1: "in-progress",
+    2: "completed"
+};
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Read "?user=..." from the URL (defaults to 30271234 if opened directly)
     const urlParams = new URLSearchParams(window.location.search);
     const currentUser = urlParams.get("user") || "30271234";
 
-    // Fetch the mock JSON file (adjust the path if your JSON files are in a different folder)
     fetch(`../assets/data/user-${currentUser}.json`)
         .then(response => {
             if (!response.ok) {
@@ -14,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
         })
         .then(tasks => {
-            renderTasks(tasks, statusMap);
+            renderTasks(tasks);
         })
         .catch(error => {
             console.error("Error loading demo tasks:", error);
         });
 });
 
-function renderTasks(tasks, statusMap) {
+function renderTasks(tasks) {
     tasks.forEach(task => {
         const columnId = statusMap[task.status];
         if (!columnId) return;
